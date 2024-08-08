@@ -10,6 +10,9 @@ export class SecretService
   async fetchSecret(): Promise<void> {
     const secretName = this.configService.get<string>('APP_NAME');
 
+    //log secretName
+    console.log('secretName: ', secretName);
+
     const client = new AWS.SecretsManager({
       region: 'ap-south-1',
     });
