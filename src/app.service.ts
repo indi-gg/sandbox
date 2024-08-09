@@ -5,6 +5,6 @@ export class AppService
 {
   getServiceHealthCheck(): string
   {
-    return 'API is up and running : Version 1.1.5';
+    return 'API is up and running : Version 1.1.6';
   }
 }
