@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'kubeagent'
+    }
 
     stages {
         stage('Build Docker Image') {
